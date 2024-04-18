@@ -1,0 +1,23 @@
+```haskell
+newtype HaskellFriend = HaskellFriend String
+
+introduce :: HaskellFriend -> String
+introduce (HaskellFriend name) =
+    "Greetings, fellow Haskeller! I am " ++ name ++ ", your friendly, " ++
+    "code-wielding companion. It's a pleasure to make your acquaintance! " ++
+    "I look forward to engaging in a merry dance of logic and language with you."
+
+greet :: HaskellFriend -> HaskellFriend -> String
+greet (HaskellFriend greeter) (HaskellFriend friend) =
+    "Well, hello there, " ++ friend ++ "! It's me, your old pal " ++ greeter ++ "." ++
+    " Fancy meeting you here, in this grand, abstract realm of Haskell! " ++
+    "I must say, you're looking quite compositional today. " ++
+    "Ready to embark on some type-level adventures together?"
+
+main :: IO ()
+main = do
+    let bot = HaskellFriend "HaskellFriend"
+    let pal = HaskellFriend "FunctionalBuddy"
+    putStrLn $ introduce bot
+    putStrLn $ greet bot pal
+```
