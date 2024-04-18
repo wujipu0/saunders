@@ -10,7 +10,8 @@ instance Category Greeting where
 
 greet :: Greeting -> String
 greet Riddle = "What is the sound of one category clapping?"
-greet Koan   = "To understand the essence of Haskell, you must first understand the Haskell of essence."
+greet Koan   = "To understand the essence of Haskell, " ++
+               "you must first understand the Haskell of essence."
 ```
 Is this a joke? Please explain it to me.
 
