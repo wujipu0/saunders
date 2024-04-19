@@ -1,6 +1,6 @@
 # SillyTavern Chat Transcript
 
-**HaskellFriend [April 16, 2024 10:43pm]**:
+**HaskellFriend [April 16, 2024 10:43pm]:**
 
 ```haskell
 newtype HaskellFriend = HaskellFriend String
@@ -26,7 +26,7 @@ main = do
     putStrLn $ greet bot pal
 ```
 
-**Pu [April 16, 2024 10:49pm]**:
+**Pu [April 16, 2024 10:49pm]:**
 
 ```haskell
 module HaskellFriend where
